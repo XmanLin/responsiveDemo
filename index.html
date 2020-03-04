@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>响应式布局实践</title>
     <link rel="stylesheet" href="./css/index.css">
@@ -9,13 +10,54 @@
 <body>
 <div id="root">
     <!-- 头部 -->
-    <header></header>
+    <header>
+        <div class="header-box">
+            <div class="logo">
+                logo
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="main-nav-item">
+                        <ul class="nav-main-list">
+                            <li class="list-item">首页</li>
+                            <li class="list-item">文章</li>
+                            <li class="list-item">论坛</li>
+                            <li class="list-item">娱乐</li>
+                            <li class="list-item">联系</li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-login">
+                        <div class="login-box">登录 | 注册</div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- 内容 -->
-    <div id="content">
-        <div class="content-header"></div>
-        <div class="content-box">
-            
+    <div id="container">
+        <div class="container-header"></div>
+        <div class="content">
+            <!-- 内容一-->
+            <div class="content-box content-box1">
+                <div class="content-box1-text"></div>
+                <div class="content-box1-img"></div>
+            </div>
+            <!-- 内容二-->
+            <div class="content-box content-box2">
+                <div class="content-box2-text"></div>
+                <div class="content-box2-text"></div>
+                <div class="content-box2-text"></div>
+            </div>
+            <!-- 内容三-->
+            <div class="content-box content-box3">
+                <div class="content-box3-text"></div>
+                <div class="content-box3-text"></div>
+                <div class="content-box3-text"></div>
+                <div class="content-box3-text"></div>
+                <div class="content-box3-text"></div>
+                <div class="content-box3-text"></div>
+            </div>
         </div>
     </div>
 
