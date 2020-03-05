@@ -227,6 +227,7 @@ footer{
 @media screen and (max-width: 767px) {
     .header-box{
         width: 90%;
+        position: relative;
     }
     .logo{
         min-width: 160px;
@@ -234,7 +235,7 @@ footer{
     }
     .login-box{
         padding: 0 2rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .content{
         width: 90%;
@@ -264,6 +265,24 @@ footer{
     /* 手机端样式 */
     .main-nav-item{
         display: none;
+        position: absolute;
+        width: 10rem;
+        right: 0;
+        top: 8rem;
+        border-radius: 0 0 .5rem .5rem;
+    }
+    .nav-main-list{
+        width: 100%;
+        background: #ffffff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 0 0 .5rem .5rem;
+    }
+    .list-item{
+        width: 100%;
+        margin: 0 1rem;
+        border-bottom: 1px solid #eeeeee;
     }
     .phone-show{
         display: block;
@@ -283,5 +302,38 @@ footer{
         height: 10px;
         width: 60px;
         background: coral;
+    }
+}
+@media screen and (max-width: 414px){
+    .content-box1-img{
+        min-width: 100%;
+    }
+}
+@media screen and (max-width: 375px){
+    .logo{
+        min-width: 100px;
+        min-height: 40px;
+        margin-right: 1rem;
+        font-size: 3rem;
+    }
+    .login-box {
+        padding: 0 1rem;
+    }
+    .phone-show{
+        height: 40px;
+        width: 40px;
+    }
+    .nav-btn span{
+        width: 40px;
+        height: 5px;
+    }
+    .list-item{
+        font-size: 1.5rem;
+    }
+    .content{
+        padding: 4rem 0;
+    }
+    .content-box2-text{
+        min-width: 100%;
     }
 }
